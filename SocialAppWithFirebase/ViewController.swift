@@ -30,7 +30,9 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
             if error != nil
             {
+                print("----------------------")
                 print("error : \(String(describing: error?.localizedDescription))")
+                print("----------------------")
             }
             else
             {
